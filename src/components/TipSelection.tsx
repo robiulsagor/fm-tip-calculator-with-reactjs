@@ -1,5 +1,3 @@
-
-import { useEffect, useState } from "react";
 import useMyContext from "../hooks/useMyContext";
 
 const tipPercentages = [5, 10, 15, 25, 50];
@@ -26,7 +24,7 @@ const TipSelection = () => {
                 ))}
 
                 {/* custom percentage */}
-                <input type="text" placeholder="Custom" onChange={(e) => setPercentage(e.target.value ? parseFloat(e.target.value) : null)}
+                <input type="text" placeholder="Custom" onChange={(e) => setPercentage(e.target.value ? parseFloat(e.target.value) : 0)}
                     className="p-2 bg-Grey50 rounded-md text-Green900 border border-transparent hover:border-hover-color focus:border-hover-color text-center font-bold outline-none" />
             </div>
         </div>

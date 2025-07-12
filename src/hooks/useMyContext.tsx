@@ -5,7 +5,7 @@ const useMyContext = () => {
     const tipContext = useContext(TipContext);
     if (!tipContext) {
         console.error("TipContext is not available");
-        return null;
+        throw new Error("useMyContext must be used within a TipProvider");
     }
     return tipContext
 }
