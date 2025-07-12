@@ -9,6 +9,7 @@
   --color-Grey200: hsl(185, 41%, 84%);
   --color-Grey50: hsl(189, 47%, 97%);
   --color-White: hsl(0, 100%, 100%);
+  --color-hover-color: #8bebd2;
 }
 
 body {

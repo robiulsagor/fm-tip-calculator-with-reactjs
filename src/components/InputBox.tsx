@@ -11,7 +11,7 @@ const InputBox = ({ label }: { label: string }) => {
             <div className="">
                 <img src={icon} alt={iconAlt} className="absolute ml-3 mt-3" />
                 <input type="text" name="" id={label} placeholder="0"
-                    className="bg-Grey50 text-Green900 text-lg font-bold py-2 ps-10 pe-5 rounded-lg w-full px-10 outline-0 text-right" />
+                    className="bg-Grey50 text-Green900 text-lg font-bold py-2 ps-10 pe-5 rounded-lg w-full px-10 outline-0 text-right border border-transparent hover:border-hover-color focus:border-hover-color" />
             </div>
 
         </div>
