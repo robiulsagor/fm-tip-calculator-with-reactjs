@@ -1,10 +1,15 @@
+import InputSide from "./components/InputSide"
+import OutputSide from "./components/OutputSide"
 
 function App() {
 
   return (
-    <h1 className="text-3xl font-bold underline text-green-700">
-      Hello world!
-    </h1>
+    <main className="bg-Green400/20 h-screen flex items-center justify-center">
+      <div className="bg-White rounded-2xl p-8 w-full max-w-[340px] font-bold">
+        <InputSide />
+        <OutputSide />
+      </div>
+    </main>
   )
 }
 
