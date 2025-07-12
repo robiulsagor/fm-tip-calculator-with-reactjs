@@ -9,7 +9,8 @@ export interface TipContextType {
     setPeople: (value: number) => void;
     tipAmount: number;
     totalAmount: number;
-    resetAmounts: () => void
+    resetAmounts: () => void;
+    isFocused: boolean
 }
 
 export const TipContext = createContext<TipContextType | undefined>(undefined)

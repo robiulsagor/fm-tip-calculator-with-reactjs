@@ -4,9 +4,9 @@ import TipSelection from "./TipSelection"
 const InputSide = () => {
     return (
         <div className="flex flex-col gap-8">
-            <InputBox label="Bill" />
+            <InputBox label="bill" />
             <TipSelection />
-            <InputBox label="No. of People" />
+            <InputBox label="people" />
         </div>
     )
 }

@@ -9,6 +9,8 @@ const TipContextProvider = ({ children }: { children: React.ReactNode }) => {
     const [tipAmount, setTipAmount] = useState(0)
     const [totalAmount, setTotalAmount] = useState(0)
 
+    const [isFocused, setIsFocused] = useState(false)
+
     // reset all amounts to zero
     const resetAmounts = () => {
         setBill(0)
@@ -16,6 +18,7 @@ const TipContextProvider = ({ children }: { children: React.ReactNode }) => {
         setPeople(0)
         setTipAmount(0)
         setTotalAmount(0)
+        setIsFocused(false)
     }
 
     useEffect(() => {
@@ -25,12 +28,13 @@ const TipContextProvider = ({ children }: { children: React.ReactNode }) => {
 
             setTotalAmount(total)
             setTipAmount(tip)
+            setIsFocused(true)
         }
     }, [bill, percentage, people])
 
 
     return (
-        <TipContext.Provider value={{ bill, setBill, percentage, setPercentage, people, setPeople, tipAmount, totalAmount, resetAmounts }}>
+        <TipContext.Provider value={{ bill, setBill, percentage, setPercentage, people, setPeople, tipAmount, totalAmount, resetAmounts, isFocused }}>
             {children}
         </TipContext.Provider>
     )
